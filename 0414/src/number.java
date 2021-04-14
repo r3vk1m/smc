@@ -5,23 +5,23 @@ public class number {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("10°³ÀÇ ·£´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä(1~50±îÁö):");
-		int check=0;										//¼ıÀÚ°¡ ¸Â¾Ò´ÂÁö È®ÀÎÇÏ´Â º¯¼ö
+		System.out.print("10ê°œì˜ ëœë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš”(1~50ê¹Œì§€):");
+		int check=0;								//ìˆ«ìê°€ ë§ì•˜ëŠ”ì§€ í™•ì¸í•˜ëŠ” ë³€ìˆ˜
 		int num = scan.nextInt();
 				
 		for(int i=0; i<10; i++){
-			int rand_int = (int) ((Math.random())*50+1);	//·£´ı¼ö ¹Ş¾Æ¿È
-			System.out.print(rand_int + " ");				//·£´ı¼ö Ãâ·Â
-			if(num==rand_int){								//¼ıÀÚ°¡ ¸Â´ÂÁö È®ÀÎ
-				check += 1;									//¸ÂÀ¸¸é check°ª Áõ°¡
+			int rand_int = (int) ((Math.random())*50+1);			//ëœë¤ìˆ˜ ë°›ì•„ì˜´
+			System.out.print(rand_int + " ");				//ëœë¤ìˆ˜ ì¶œë ¥
+			if(num==rand_int){						//ìˆ«ìê°€ ë§ëŠ”ì§€ í™•ì¸
+				check += 1;						//ë§ìœ¼ë©´ checkê°’ ì¦ê°€
 			}
 		}
 		
-		if(check==0){										//check°¡ ÃÊ±â°ªÀÌ¸é ²Î Ãâ·Â
-			System.out.println("²Î! ´ÙÀ½±âÈ¸¿¡~");
+		if(check==0){								//checkê°€ ì´ˆê¸°ê°’ì´ë©´ ê½ ì¶œë ¥
+			System.out.println("ê½! ë‹¤ìŒê¸°íšŒì—~");
 		}
-		else												 //±× ¿ÜÀÇ °ª ´Ù ´çÃ· Ãâ·Â
-			System.out.println("\n´çÃ·!");
+		else									//ê·¸ ì™¸ì˜ ê°’ ë‹¤ ë‹¹ì²¨ ì¶œë ¥
+			System.out.println("\në‹¹ì²¨!");
 		scan.close();
 	}
 
